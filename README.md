@@ -1,4 +1,4 @@
-# Web Development Certificate Capstone: Whack-a-Mole!
+# Web Development Certificate Capstone: Whack-a-Mole (Now: Squish-a-Bug)!
 
 A local game development studio has decided to create a new game that's based on Whack-A-Mole. If you've ever been to an arcade, you have probably seen or played Whack-A-Mole. It's a game in which a player uses a mallet to hit toy moles, which appear at random, back into their holes.
 
