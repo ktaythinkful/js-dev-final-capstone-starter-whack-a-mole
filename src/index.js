@@ -3,7 +3,7 @@ const moles = document.querySelectorAll('.mole');
 const startButton = document.querySelector('#start');
 const score = document.querySelector('#score'); // Use querySelector() to get the score element
 const timerDisplay = document.querySelector('#timer'); // use querySelector() to get the timer element.
-new Audio('./molegame.mp3').play()
+new Audio('./molesong.mp3').play()
 
 let time = 0;
 let timer;
