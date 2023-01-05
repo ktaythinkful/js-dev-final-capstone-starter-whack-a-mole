@@ -40,13 +40,13 @@ function randomInteger(min, max) {
  */
 function setDelay(difficulty) {
   if (difficulty === "easy") {
-    return 1500
+    return 1500;
   } else if (difficulty === "normal") {
-    return 1000
-  } else {
-    return randomInteger(600, 1200)
-    }
-  }
+    return 1000;
+} else {
+  return randomInteger(600, 1200);
+}
+}
 
 /**
  * Chooses a random hole from a list of holes.
