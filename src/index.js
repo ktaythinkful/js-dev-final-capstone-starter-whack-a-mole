@@ -209,9 +209,8 @@ function startTimer() {
 *
 */
 function whack(event) {
-  // TODO: Write your code here.
-  // call updateScore()
-  return points;
+  console.log("whack!")
+  updateScore();
 }
 
 /**
@@ -220,8 +219,9 @@ function whack(event) {
 * for an example on how to set event listeners using a for loop.
 */
 function setEventListeners(){
-  // TODO: Write your code here
-
+  for (let mole of moles) {
+     mole.addEventListener('click',whack)
+  }
   return moles;
 }
 
@@ -233,6 +233,7 @@ function setEventListeners(){
 */
 function setDuration(duration) {
   time = duration;
+  timerDisplay.textContent = time
   return time;
 }
 
@@ -243,9 +244,8 @@ function setDuration(duration) {
 *
 */
 function stopGame(){
-  // stopAudio(song);  //optional
   clearInterval(timer);
-  return "game stopped";
+  return "Game stopped";
 }
 
 /**
@@ -254,13 +254,17 @@ function stopGame(){
 * is clicked.
 *
 */
-function startGame(){
-  //setDuration(10);
-  //showUp();
-  return "game started";
-}
-
 startButton.addEventListener("click", startGame);
+
+function startGame(){
+  setDuration(10);
+  showUp();
+  clearScore();
+  setEventListeners();
+  startTimer();
+  updateTimer();
+  return "Game started";
+}
 
 
 // Please do not modify the code below.
