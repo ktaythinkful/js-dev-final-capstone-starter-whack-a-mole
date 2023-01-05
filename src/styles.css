@@ -13,12 +13,13 @@ html {
 h1 {
   text-align: center;
   font-size: 90px;
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-family: "Open Sans", "Arial", cursive;
   color: white;
   -webkit-text-stroke: 2px black;
 }
 
 h2 {
+  font-family: "Times New Roman", "Arial", "Open Sans";
   text-align: center;
   font-size: 40px;
   color: white;
