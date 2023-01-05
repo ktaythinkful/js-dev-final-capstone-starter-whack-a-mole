@@ -277,18 +277,18 @@ function stopGame(){
 * is clicked.
 *
 */
-startButton.addEventListener("click", startGame);
 
 function startGame(){
-  setDuration(10);
-  showUp();
   clearScore();
   setEventListeners();
+  setDuration(10);
+  showUp();
   startTimer();
   updateTimer();
   return "Game started";
 }
 
+startButton.addEventListener("click", startGame);
 
 // Please do not modify the code below.
 // Used for testing purposes.
