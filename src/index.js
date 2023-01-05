@@ -63,7 +63,13 @@ function setDelay(difficulty) {
  * chooseHole(holes) //> returns one of the 9 holes that you defined
  */
 function chooseHole(holes) {
-  // TODO: Write your code here.
+  let index = randomInteger(0, 8)
+  const hole = holes[index]
+  if (hole === lastHole) {
+     return chooseHole(holes)
+  } else (lastHole = hole) {
+     return hole;
+  }
 
 }
 
@@ -88,9 +94,8 @@ function chooseHole(holes) {
 *
 */
 function gameOver() {
-  // TODO: Write your code here
-  
-}
+  return (time > 0) ? showUp() : stopGame();
+  }
 
 /**
 *
